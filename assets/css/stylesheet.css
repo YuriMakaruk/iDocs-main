@@ -1,12 +1,5 @@
 /*===========================================================
 
-   Template Name: iDocs - One Page Documentation HTML Template
-   Author: Harnish Design
-   Template URL: http://demo.harnishdesign.net/html/idocs
-   Author URL: https://themeforest.net/user/harnishdesign
-   File Description : Main css file of the template
-	
-=================================================
   Table of Contents
 =================================================
 
@@ -33,7 +26,7 @@
 
 =======================================================*/
 /* =================================== */
-/*  1. Basic Style 
+/*  1. Basic Style
 /* =================================== */
 body, html {
   height: 100%;
@@ -144,6 +137,7 @@ form {
 
 img {
   vertical-align: inherit;
+  border: solid 1px;
 }
 
 a, a:focus {

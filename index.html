@@ -1,1290 +1,378 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
-  <link href="assets/images/favicon.png" rel="icon" />
-  <title>Documentation | Your ThemeForest item Name</title>
-  <meta name="description" content="Your ThemeForest item Name and description">
-  <meta name="author" content="harnishdesign.net">
-
-  <!-- Stylesheet
-============================== -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
-  <!-- Font Awesome Icon -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
-  <!-- Magnific Popup -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
-  <!-- Highlight Syntax -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
-</head>
-
-<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="lds-ellipsis">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <!-- Preloader End -->
-
-  <!-- Document Wrapper
-=============================== -->
-  <div id="main-wrapper">
-
-    <!-- Header
-  ============================ -->
-    <header id="header" class="sticky-top">
-      <!-- Navbar -->
-      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
-        <div class="container-fluid">
-          <!-- Sidebar Toggler -->
-          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
-          <!-- Logo -->
-          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo2.png" alt="iDocs Template" height="auto" width="100%" /> </a>
-          <!-- <span class="text-2 ml-2">v1.0</span> -->
-          <!-- Logo End -->
-
-          <!-- Navbar Toggler -->
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
-
-          <div id="header-nav" class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-              <li><a target="_blank" href="ReleaseNotes.html">Release Notes</a></li>
-              <li class="dropdown"> <a class="dropdown-toggle" href="#">User Guides</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">User Guides</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="index.html">Action</a></li>
-                      <li><a class="dropdown-item" href="feature-header-dark.html">Another Action</a></li>
-                      <li><a class="dropdown-item" href="feature-header-primary.html">Something Else Here</a></li>
-                      <li><a class="dropdown-item" href="index-2.html">Another Link</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another Action</a>
-                  <li><a class="dropdown-item" href="#">Something Else Here</a></li>
-                </ul>
-              </li>
-              <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign">Update Videos</a></li>
-              <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">VISIQUATE basics</a></li>
-            </ul>
-          </div>
-          <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
-            <li class="social-icons-twitter"><a data-toggle="tooltip" href="https://www.facebook.com/visiquateua/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="social-icons-facebook"><a data-toggle="tooltip" href="https://www.facebook.com/visiquateua" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="social-icons-dribbble"><a data-toggle="tooltip" href="https://www.facebook.com/visiquateua/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-    </header>
-    <!-- Header End -->
-
-    <!-- Content
-  ============================ -->
-    <div id="content" role="main">
-
-      <!-- Sidebar Navigation
-	============================ -->
-      <div class="idocs-navigation bg-dark docs-navigation-dark">
-        <ul class="nav flex-column ">
-          <li class="nav-item"><a class="nav-link active" href="#idocs_start">Summary</a>
-          <li class="nav-item"><a class="nav-link active" href="#New_Features_in_Action_Panel">New Features in Action Panel</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#ActionPanelStaysOpen">Action Panel Stays Open</a></li>
-              <li class="nav-item"><a class="nav-link" href="#Changed_behavior">Changed the behavior of the Action Panel and Item History</a></li>
-              <li class="nav-item"><a class="nav-link" href="#right_side_panel">Item History opens in the right-side panel</a></li>
-              <li class="nav-item"><a class="nav-link" href="#item_history_opens">Item History opens next to Action Panel</a></li>
-              <li class="nav-item"><a class="nav-link" href="#closing_item_history">Closing Item History</a></li>
-              <li class="nav-item"><a class="nav-link" href="#showingFieldValuesonTimelineDetail">Showing Field Values on Timeline Detail</a></li>
-              <li class="nav-item"><a class="nav-link" href="#FiltersResetGridandActionPanel">Filters Reset Grid and Action Panel</a></li>
-              <li class="nav-item"><a class="nav-link" href="#saving">Saving Action Panel Changes</a></li>
-              <li class="nav-item"><a class="nav-link" href="#read_only_action_panel">Read-only Action Panel</a></li>
-              <li class="nav-item"><a class="nav-link" href="#keyboardNavigation">Keyboard Navigation</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#miscellaneous">Miscellaneous</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#GridViewFiltering">Grid View Filtering</a></li>
-              <li class="nav-item"><a class="nav-link" href="#DMAandPayFlo">DMA and PayFlo Content Updates</a></li>
-              <li class="nav-item"><a class="nav-link" href="#UserManagement">User Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="#ImprovedPerformance">Improved Performance of Report Tree</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#NewFeaturesinCardView">New Features in CardView</a>
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#ResizingPanels">Resizing Panels</a></li>
-              <li class="nav-item"><a class="nav-link" href="#DraggingTabs">Dragging Tabs</a></li>
-              <li class="nav-item"><a class="nav-link" href="#selectingTabs">Selecting Tabs</a></li>
-              <li class="nav-item"><a class="nav-link" href="#verticalGrid">Vertical Grid</a></li>
-              <li class="nav-item"><a class="nav-link" href="#horizontalGrid">Horizontal Grid</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#displayingDetailedCardinAccountActivity">Displaying Detailed Card in Account Activity</a>
-          <li class="nav-item"><a class="nav-link" href="#restoringDefaultLayouts">Restoring Default Layouts</a></li>
-          <li class="nav-item"><a class="nav-link" href="#userCustomConfiguration">User Custom Configuration</a></li>
-          <li class="nav-item"><a class="nav-link" href="#synchronization">Action Panel and Account Activity Synchronization</a></li>
-          <li class="nav-item"><a class="nav-link" href="#closingRightSection">Closing Right Section</a></li>
-          <li class="nav-item"><a class="nav-link" href="#rules">Showing Rules Reprocessing Notifications</a>
-
-          </li>
-        </ul>
-      </div>
-
-      <!-- Docs Content
-	============================ -->
-      <div class="idocs-content">
-        <div class="container">
-
-          <!-- Getting Started
-		============================ -->
-          <section id="idocs_start">
-            <p>
-            <form method="get" action="External VisiQuate Release Notes (Action Panel) - Summer.pdf">
-              <button type="submit">Download in PDF</button>
-            </form>
-            </p>
-            <h1>VisiQuate Release Notes</h1>
-            <h2>Summer 2022</h2>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Summary
-		============================ -->
-          <section id="idocs_installation">
-            <h2>Summary</h2>
-            <p>
-              Since the first of this year, we’ve made a number of updates to our products that should help users be more efficient in how they interact with our products, enabled some updates in user management and put in some requested features.
-              All of these capabilities are already available for you in your environments, so you may have noticed some of these already.
-            </p>
-            <p>
-              In addition, over the next couple of months we will be rolling out a revamped card view. Card View now offers a more user-friendly format of a consolidated suite of data about a patient’s account. Now you can customize the interface
-              even more by taking advantage of the following set of enhancements:
-            </p>
-            <ul>
-
-              <li>Panels resizing
-
-              <li>Tabs and columns dragging
-
-              <li>Rows reordering
-
-              <li>Vertical and horizontal grid resizing
-
-              <li>Sorting and filtering grids and much more.
-              </li>
-            </ul>We hope you enjoy the available capabilities. If you have questions on when the new card view will be available for your domain, please contact your account manager.
-            <p>
-              <img src="assets\images\Summary.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-            </p>
-
-          </section>
-
-          <!-- New_Features_in_Action_Panel
-        ============================ -->
-          <section id="New_Features_in_Action_Panel">
-            <h1>New Features in Action Panel</h1>
-
-            <p>
-              This section describes how AP has been improved to bring users the best experience while working and taking advantage of all the available features.
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Action Panel Stays Open
-		============================ -->
-          <section id="ActionPanelStaysOpen">
-            <h2>Action Panel Stays Open</h2>
-
-
-            <p>
-              In Flo, the Action Panel can stay open while users select other or additional records in the grid. This will help users reduce the number of clicks to reopen the panel when selecting a new record.
-            </p>
-            <p>
-
-              <img src="assets\images\ActionPanelStaysOpen.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-
-            </p>
-            <p>
-              In this new feature, Action Panel fields are updated automatically as the users select/deselect accounts on a grid.
-            </p>
-            <p>
-
-              <img src="assets\images\Responsive Action Panel2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-            </p>
-            <p>
-              Users see changes immediately without the need for additional clicks or reloading the page.
-            </p>
-            <img src="assets\images\Responsive Action Panel3.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-          </section>
-
-          <hr class="divider">
-
-          <!-- Changed the behavior of the Action Panel and Item History
-============================ -->
-          <section id="Changed_behavior">
-            <h2>Changed the behavior of the Action Panel and Item History</h2>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Item History opens in the right-side panel
-============================ -->
-          <section id="right_side_panel">
-            <h2>Item History opens in the right-side panel</h2>
-            <p>
-              User can now open Item History in a right-side panel when only one account is selected and the Action Panel is closed or Worklist Options is open.
-            </p>
-            <p>
-              <img src="assets\images\Item History opens in the right-side panel.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-            </p>
-            <p>
-              <strong>Note: </strong>When Item History is open as a right-side panel, the user can select a different Worklist item by clicking it. The previous item is automatically deselected and the history panel is reloaded with the contents
-              related to the newly selected item.
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Item History opens next to Action Panel
-============================ -->
-          <section id="item_history_opens">
-            <h2>Item History opens next to Action Panel</h2>
-            <p>
-              Item History now opens next to the Action Panel when only one account is selected and the Action Panel is open.
-            </p>
-            <p>
-              <img src="assets\images\Action Panel & Item History.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-            </p>
-            <p>
-              <strong>Note: </strong>When the user selects another Worklist item or deselects the currently selected item, Item History automatically closes.
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Closing Item History
-============================ -->
-          <section id="closing_item_history">
-            <h3>Closing Item History</h3>
-            <p>
-              Now Item History closes If:
-            </p>
-            <ul>
-
-              <li>The user clicks the Item History button while Item History is open.
-
-              <li>The user opens another panel.
-
-              <li>The user deselects the Worklist item.
-
-              <li>The user selects one more Worklist item by selecting its check box.
-              </li>
-            </ul>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Showing Field Values on Timeline Detail
-============================ -->
-          <section id="showingFieldValuesonTimelineDetail">
-            <p>
-              We have updated the Timeline Details panel which allows users to show compact history, standard history, or expanded history by selecting radio buttons. Now the compact version shows users the field values instead of the field names.
-            </p>
-
-            <table class="table table-bordered">
-              <thead class="table-dark">
-                <tr>
-                  <td><strong>New contracted version</strong>
-                  </td>
-                  <td><strong>Old contracted version</strong>
-                  </td>
-                </tr>
-              </thead>
-              <tr>
-                <td>
-                  <img src="assets\images\Showing Field Values on Timeline Detail.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                </td>
-                <td>
-                  <img src="assets\images\Showing Field Values on Timeline Detail2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                </td>
-              </tr>
-            </table>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Filters Reset Grid and Action Panel
-============================ -->
-          <section id="FiltersResetGridandActionPanel">
-            <h2>Filters Reset Grid and Action Panel </h2>
-
-
-            <p>
-              Currently if a user selects one or more accounts and then applies filters to the workflow grid, the accounts remain selected, even if they don’t qualify for the filters. In order to ensure a consistent experience and avoid potential
-              issues of incorrectly updating accounts, the system will now unselect any accounts and close the action panel when filters are applied to the grid.
-            </p>
-            <p>
-
-              <img src="assets\images\Filters Reset.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-            </p>
-
-          </section>
-
-          <hr class="divider">
-
-          <!-- Saving Action Panel Changes
-============================ -->
-          <section id="saving">
-            <h2>Saving Action Panel Changes</h2>
-
-
-            <p>
-              This new feature prevents the user from losing unsaved changes made in the Action Panel. Before closing the Action Panel with unsaved changes and making other changes in the worklist, a dialog window appears prompting the user to make a
-              decision whether to save the changes made in the Action Panel.
-            </p>
-            <p>
-
-              <img src="assets\images\Saving Action Panel Changes.png" height="auto" width="50%" alt="alt_text" title="image_tooltip">
-
-            </p>
-          </section>
-
-          <hr class="divider">
-
-          <!-- Read-only Action Panel
-============================ -->
-          <section id="read_only_action_panel">
-
-            <h2>Read-only Action Panel</h2>
-
-
-            <p>
-              Now users without permission to edit worklist items can view Action Panel fields and values in the read-only mode. This allows sites to grant users access to see the Action Panel and its fields for training, audit, or other purposes
-              without allowing users to make changes if they shouldn’t do so.
-            </p>
-            <p>
-
-              <img src="assets\images\Read-only Action Panel_Cropped.png" height="auto" width="70%" alt="alt_text" title="image_tooltip">
-
-            </p>
-
-          </section>
-
-          <hr class="divider">
-
-          <!-- Keyboard Navigation
-============================ -->
-          <section id="keyboardNavigation">
-            <h2>Keyboard Navigation</h2>
-
-
-            <p>
-              In the Action Panel, users now can move between the fields using the keyboard. Press the Tab button to move down or the Shift+Tab buttons to move up on the panel.
-            </p>
-
-            <table>
-              <tr>
-                <td>
-                  <img src="assets\images\Keyboard Navigation.png" height="auto" width="96%" alt="alt_text" title="image_tooltip">
-
-                </td>
-                <td>
-                  <img src="assets\images\Keyboard Navigation2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                </td>
-              </tr>
-            </table>
-
-            <hr class="divider">
-
-            <!-- Miscellaneous
-============================ -->
-            <section id="miscellaneous">
-              <h1>Miscellaneous Features and Improvements</h1>
-
-              <hr class="divider">
-              <section id="GridViewFiltering">
-                <h2>Grid View Filtering</h2>
-
-
-                <p>
-                  We’ve made updates to how the grid view filtering works, as well as how the numeric and date fields display. These updates help ensure consistency in what users see, and how they can filter values.
-                </p>
-                <p>
-                  The formatting of the grid view will now appear as:
-                </p>
-
-
-                <table class="table table-bordered">
-                  <thead class="table-dark">
-                    <tr>
-                      <td>Column Type
-                      </td>
-                      <td>Pattern
-                      </td>
-                      <td>Examples
-                      </td>
-                    </tr>
-                  </thead>
-                  <tr>
-                    <td>Numeric fields
-                    </td>
-                    <td>Integer or decimal
-                      <p>
-                        Every three digits of the integer are separated by spaces
-                      <p>
-                        The full stop is used to separate decimal digits
-                      <p>
-                        '-' sign is used in negative values, no space between the sign and the number
-                    </td>
-                    <td>12 222
-                      <p>
-                        -12 222
-                      <p>
-                        12 222 222.22222
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Currency fields
-                    </td>
-                    <td>1. $ {full or abbreviated positive integer or decimal}
-                      <p>
-                        2. -$ {full or abbreviated positive integer or decimal}
-                      <p>
-                        3. {full or abbreviated positive or negative integer or decimal}
-                      <p>
-                        '$' sign is used before the number w/ one space between the sign and the number
-                    </td>
-                    <td>$ 45.21
-                      <p>
-                        45.21
-                      <p>
-                        -$ 5 777.24
-                      <p>
-                        $ 1 189 777.22
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>% fields
-                    </td>
-                    <td>1. {full or abbreviated positive or negative integer or decimal} %
-                      <p>
-                        2. {full or abbreviated positive or negative integer or decimal}
-                      <p>
-                        '%' sign is used after the number w/o spaces between the sign and the number
-                    </td>
-                    <td>42
-                      <p>
-                        42.2%
-                      <p>
-                        -42%
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Date fields
-                    </td>
-                    <td>mm/dd/yyyy
-                    </td>
-                    <td>05/02/2022
-                    </td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">Abbreviation Rules
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Numeric fields
-                    </td>
-                    <td>Integers
-                      <p>
-                        Numbers &lt; 10 000 -> show a raw number (no spaces or symbols)
-                      <p>
-                        Numbers >= 10 000 but &lt;1 000 000 -> shorten using the 'K' symbol, on hover show the full value
-                      <p>
-                        Numbers >= 1 000 000 -> shorten using the 'M' symbol, on hover show the full value
-                      <p>
-                        The same applies to negative numbers
-                    </td>
-                    <td>12 000 or 12 222 -> 12K
-                      <p>
-                        120 000 or 120 222 -> 120K
-                      <p>
-                        1 200 000 or 1 222 222 -> 1.2M
-                      <p>
-                        12 000 000 or 12 222 222 -> 12M
-                      <p>
-                        120 000 000 or 120 222 222 -> 120M
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Numeric fields
-                    </td>
-                    <td>Decimals
-                      <p>
-                        Same as integers
-                    </td>
-                    <td>12 000 000.1 -> 12M
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Currency fields
-                    </td>
-                    <td>$ {abbreviated numeric value}
-                    </td>
-                    <td>$ 120M
-                      <p>
-                        -$ 120M
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>% fields
-                    </td>
-                    <td>N/A
-                    </td>
-                    <td>N/A
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Date fields
-                    </td>
-                    <td>N/A
-                    </td>
-                    <td>N/A
-                    </td>
-                  </tr>
-                </table>
-
-
-                <p>
-                  And filtering in the grid view now accepts the following options:
-                </p>
-
-                <table class="table table-bordered">
-                  <tr>
-                    <td>Column Type
-                    </td>
-                    <td>Allowed filter values
-                    </td>
-                    <td>Single Value Examples
-                    </td>
-                    <td>Multiple Value Examples
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Numeric fields (positive numbers)
-                    </td>
-                    <td>1. Full integer
-                      <p>
-                        2. Abbreviated integer (copied from the grid or in the format that matches values on the grid)
-                      <p>
-                        3. Full decimal
-                      <p>
-                        4. Abbreviated decimal (copied from the grid or in the format that matches values on the grid
-                    </td>
-                    <td>12222
-                      <p>
-                        12 222
-                      <p>
-                        12222.222
-                      <p>
-                        12K
-                      <p>
-                        1.2k
-                    </td>
-                    <td>12222,13 222,12222.222,1.7k,13 222 111,120M
-                      <p>
-
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Numeric fields (negative numbers)
-                    </td>
-                    <td>-{full or abbreviated positive integer or decimal}
-                    </td>
-                    <td>-12222
-                      <p>
-                        - 12 222
-                      <p>
-                        -12K
-                      <p>
-                        - 120M
-                    </td>
-                    <td>-12222,- 13 222,12222.222,1.7k
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Currency fields
-                    </td>
-                    <td>1. ${full or abbreviated positive integer or decimal}
-                      <p>
-                        2. -${full or abbreviated positive integer or decimal}
-                      <p>
-                        3. {full or abbreviated positive or negative integer or decimal}
-                    </td>
-                    <td>$ 45.21
-                      <p>
-                        45.21
-                      <p>
-                        -$ 5 777.24
-                      <p>
-                        $ 1 189 777.22
-                      <p>
-                        - $ 120 M
-                    </td>
-                    <td>$ 45.21,45.21,-$ 5 777.24,- $ 120M,-$121m
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>% fields
-                    </td>
-                    <td>1. {full positive or negative integer or decimal}%
-                      <p>
-                        2. {full positive or negative integer or decimal}
-                    </td>
-                    <td>42
-                      <p>
-                        42%
-                      <p>
-                        -42%
-                    </td>
-                    <td>42,43%,-41%
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Date fields
-                    </td>
-                    <td>1. mm/dd/yyyy
-                      <p>
-                        2. {full or abbreviated name of the month}
-                      <p>
-                        3. {full or abbreviated name of the month} {year}
-                    </td>
-                    <td>05/02/2022
-                      <p>
-                        February
-                      <p>
-                        Feb 2022
-                    </td>
-                    <td>05/02/2022,Feb 2021,February2020
-                    </td>
-                  </tr>
-                </table>
-
-                <hr class="divider">
-
-                <!-- DMA and PayFlo Content Updates
-============================ -->
-                <section id="DMAandPayFlo">
-                  <h2>DMA and PayFlo Content Updates</h2>
-
-
-                  <ul>
-
-                    <li>New EOB Lookup table - Our team has updated the EOB lookup table to utilize both CARC and RARC codes to drive denial sub-type and a new opportunity rank field (replaces the opportunity percentage).
-                      <ul>
-
-                        <li>Opportunity Rank can be used to replace the opportunity percentage field. The new field utilizes just high/medium/low to provide directional guidance and is based on a review of data aggregated from across client sites by
-                          our denial experts. The move to a 3-tier rank vs a percentage was made because the percentages were generally grouped to just 3 values, and it was felt they were overly specific.
-                        </li>
-                      </ul>
-
-                    <li>All standard codes (revenue, CPT/HCPCs, CARC, RARC) were updated to the latest standards
-
-                    <li>Standard fields were added for low dollar, low opportunity, and RARC hierarchy. Logic was updated for high dollar flags, payment variance (previously underpaid) amounts and flags.
-
-                    <li>Additional logic was embedded within the CARC Hierarchy lookup so it includes RARC as well as denial opportunity and complexity, in addition to the dollar amount.
-
-                    <li>Please work with your account manager and support team to take advantage of these changes. <strong>Review will be required to merge any EOB lookup customizations that have been done for your site with the updates that have
-                        been made to our standard</strong>
-                    </li>
-                  </ul>
-                </section>
-
-                <hr class="divider">
-
-                <!-- User Management
-============================ -->
-                <section id="UserManagement">
-                  <h2>User Management</h2>
-
-
-                  <p>
-                    For users that have access to the user management features within Visiquate, the following changes have been made.
-                  </p>
-                  <h3>User Creation and Activation Date</h3>
-
-
-                  <p>
-                    When editing user account, you can now see additional information: the date of account creation and the most recent date when the account was activated.
-                  </p>
-                  <p>
-
-                    <img src="assets\images\User Creation and Activation Date.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-
-                    <img src="assets\images\User Creation and Activation Date2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    To view this information:
-                  </p>
-                  <ol>
-
-                    <li>Open the User Management window from the top-right User menu.
-
-                    <li>Right-click a profile and select <strong>Edit</strong>.
-                    </li>
-                  </ol>
-                  <p>
-                    In the opened window, information about the creation and activation of a user is displayed.
-                  </p>
-                  <p>
-                    <strong>Note:</strong> Some profiles may contain only the creation date.
-                  </p>
-                  <!-- Indication of Deactivated Users
-  ============================ -->
-                  <h3>Indication of Deactivated Users</h3>
-
-
-                  <p>
-                    Added better indication of deactivated users, which is now available in the Edit Users dialog window.
-                  </p>
-                  <p>
-
-                    <img src="assets\images\deactivated.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    To view this information:
-                  </p>
-                  <ol>
-
-                    <li>Open the User Management window from the top-right User menu.
-
-                    <li>Select the <strong>Deactivated Users</strong> check box and right-click a profile.
-                    </li>
-                  </ol>
-                  <p>
-                    In the opened Edit Users dialog window, information about user deactivation is displayed.
-                  </p>
-                  <h3>Avatar Error Message</h3>
-
-
-                  <p>
-                    When editing a user profile, an error message is now shown if an avatar is bigger than 5 MB.
-                  </p>
-                  <p>
-
-                    <img src="assets\images\error.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-
-                <hr class="divider">
-
-                <!-- Improved Performance of Report Tree
-============================ -->
-                <section id="ImprovedPerformance">
-                  <h2>Improved Performance of Report Tree</h2>
-
-
-                  <p>
-                    The report tree accessible from the Reports menu on the left panel has improved. In order to speed up content loading, the system now loads it in parts per user request instead of loading all folders and elements at once. That
-                    means that the content in folders is loaded when you open that folder. This way, you see high-level folders immediately without waiting for all the content to be loaded.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/improved.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-
-                </section>
-
-
-                <hr class="divider">
-
-                <!-- New Features in CardView
-============================ -->
-                <section id="NewFeaturesinCardView">
-                  <h1>New Features in CardView</h1>
-
-
-                  <p>
-                    This section describes how CardView has been improved to bring users the best experience while working and customizing the app to suit their needs.
-                  </p>
-
-                </section>
-
-
-                <hr class="divider">
-
-                <!-- Resizing Panels
-============================ -->
-                <section id="ResizingPanels">
-                  <h2>Resizing Panels</h2>
-
-
-                  <p>
-                    This feature allows adjusting the size of panels by dragging the boundary of panels left or right. This improves the readability of the content presented in each section.
-                  </p>
-                  <p>
-
-                    <img src="assets\images\panelSizing.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  Here is the demo
-                  <p>
-                    <img src="assets\images\Resizing_Panels.gif" alt="" height="auto" width="100%">
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Dragging Tabs
-============================ -->
-                <section id="DraggingTabs">
-                  <h2>Dragging Tabs</h2>
-
-
-                  <p>
-                    This feature allows users to reorder tabs on the panel by dragging them. This helps move tabs around to create the most efficient working environment.
-                  </p>
-                  <p>
-
-                    <img style="border: 0;" src="assets/images/DraggableTabs.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Selecting Tabs
-============================ -->
-                <section id="selectingTabs">
-
-                  <h2>Selecting Tabs</h2>
-
-
-                  <p>
-                    This feature allows user to open the drop-down menu (2) that lists all the tabs present in the current section and then make a selection.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/TabSwitching.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-                <hr class="divider">
-
-                <!-- Vertical Grid
-============================ -->
-                <section id="verticalGrid">
-                  <h2>Vertical Grid </h2>
-
-
-                  <p>
-                    This section lists improvements that bring users the best experience while working and customizing the Vertical Grid.
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Resizing Vertical Grids
-============================ -->
-                <section id="resizingVerticalGrids">
-                  <h3>Resizing Vertical Grids </h3>
-
-
-                  <p>
-                    This feature allows adjusting the size of columns to free the widget’s working space. For example, this allows users to minimize the names column to better see the values column.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Verticalgridsresizing.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Patient Information Widget </h3>
-
-
-                  <p>
-                    This widget displays the patient’s full name and additional information about such values as gender, age etc., which is now pinned at the top of the main section even when the user scrolls down the grid.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/PatientInformationWidget.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Reordering Rows in Vertical Grid</h3>
-
-
-                  <p>
-                    This feature allows users to reorder rows in the vertical grid by dragging them up/down in the grid. This lets users group information in a more intuitive and task-oriented way.
-                  </p>
-                  <p>
-                    The left alignment and formatting of names and values has improved visual representation for a user that works with the information in the vertical grid.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/ReorderingRows.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-                <hr class="divider">
-
-                <!-- Horizontal Grid
-============================ -->
-                <section id="horizontalGrid">
-                  <h2>Horizontal Grid</h2>
-
-
-                  <p>
-                    This section lists improvements that bring users the best experience while working and customizing the Horizontal Grid.
-                  </p>
-                  <p>
-                    <strong>Note: </strong>Horizontal grid options resemble Flo grid options.
-                  </p>
-                  <h3>Resizing Horizontal Grids </h3>
-
-
-                  <p>
-                    This feature allows adjusting the size of columns on the horizontal grid by dragging the boundary of the columns. This lets users view the content of the column in its entirety and minimize other columns.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Horizontalgridsresizing.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Sorting Grids</h3>
-
-
-                  <p>
-                    This feature allows users to sort content in the grid by sorting content in a column. This allows users to arrange information in a way that helps them see critical data immediately. To sort the column, click the grid header.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/sorting.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Grid Options</h3>
-
-
-                  <p>
-                    This feature allows users to configure the grid by:
-                  </p>
-                  <ul>
-
-                    <li>Highlighting even rows to help users navigate in the grid while scrolling, searching, etc.
-
-                    <li>Showing filters box. This feature is similar to the Flo filters except that in Card View users can hide filters to free the columns space. For details on filtering, refer to the section <a
-                        href="#heading=h.uhjvwbq7hniv">Filtering Grids</a>.
-
-                    <li>Specifying which columns to display in the grid. This feature lets users hide certain columns and work only with the columns that users need for the task at hand.
-
-                    <li>Reordering the grid columns. This lets users group content in a more relevant way.
-                      <p>
-
-
-                        <img src="assets/images/GridOptions2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                      </p>
-                    </li>
-                  </ul>
-                  <p>
-                    To open the Grid Options dialog box, click the button in the top right corner of the grid.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/GridOptions.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Filtering Grids</h3>
-
-
-                  <p>
-                    Data in the grid can be filtered using the filtering options displayed in the column header.
-                  </p>
-                  <p>
-                    This option lets users find certain content and filter out the rest of the information.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/filter.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    Filter boxes can include configurations for dates, free text, or filter selections depending on the filter type.
-                  </p>
-                  <p>
-                    To add the filtering options, click the Grid Option button in the top right corner of the grid and then select the <strong>Show Filters</strong> check box.
-                  </p>
-                  <p>
-                    <strong>Note:</strong> In Flo, users cannot hide these filters through the Grid Option.
-                  </p>
-                  <p>
-                    For details on all the filtering options, refer to the CardView user guide.
-                  </p>
-                  <h3>Dragging Columns</h3>
-
-
-                  <p>
-                    This feature allows users to reorder columns in the grid by dragging them. This customization lets users compare values and rearrange content to meet the tasks at hand.
-                  </p>
-                  <p>
-                    <strong>Note:</strong> You can also reorder columns from the Grid Option menu. For details, refer to the section <a href="#heading=h.6agyhslewbm5">Grid Options</a>.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/DraggableColumns.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Pinning Columns</h3>
-
-
-                  <p>
-                    This feature allows users to pin a grid column which helps in navigating the grid once you begin scrolling the grid left and right.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/PinColumn.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Dragging Widgets</h3>
-
-
-                  <p>
-                    This feature allows users to change the location of the grid widget within the panel by dragging it.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/DraggableSections.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Multi-Grid Scrolling</h3>
-
-
-                  <p>
-                    This feature allows users to scroll through each separate grid or the entire panel that may include many grids. This helps users navigate and scroll through the widgets faster.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Multi.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Collapsing/Expanding Widgets</h3>
-
-
-                  <p>
-                    This feature allows users to collapse and expand widgets by clicking the up/down arrow buttons. This functionality helps hide unneeded grid content.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Collapsing.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <h3>Links to Additional Accounts </h3>
-
-
-                  <p>
-                    This feature allows users to drill down to additional Card View accounts by clicking the account number in the grid. This option lets users view other accounts without the need to return to the FLO grid.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Links.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-                <hr class="divider">
-
-                <!-- Displaying Detailed Card in Account Activity
-============================ -->
-                <section id="displayingDetailedCardinAccountActivity">
-                  <h2>Displaying Detailed Card in Account Activity</h2>
-
-
-                  <p>
-                    The detailed card dialog window displayed in the Account Activity tab on Summary Card View has been repositioned to avoid overlapping the Timeline Detail elements when users want to view all the information.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/Displaying.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-                <hr class="divider">
-
-                <!-- Restoring Default Layouts
-============================ -->
-                <section id="restoringDefaultLayouts">
-                  <h2>Restoring Default Layouts</h2>
-
-
-                  <p>
-                    This feature allows users to restore the Card View user interface to its default state.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/RestoreDefaultLayout.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                </section>
-                <hr class="divider">
-
-                <!-- User Custom Configuration
-============================ -->
-                <section id="userCustomConfiguration">
-                  <h2>User Custom Configuration</h2>
-
-
-                  <p>
-                    Each change a user makes in Card View is saved as the user’s custom preference.
-                  </p>
-                  <p>
-                    This feature allows users to save customizations across all instances of one CardView.
-                  </p>
-                  <p>
-                    <strong>Note: </strong>Customizations will not apply when a user opens a different CardView. These custom preferences are associated exclusively with the user who set them.
-                  </p>
-                  <p>
-                    For details on CardView customizations that a user can save as custom preferences, refer to the CardView user guide.
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Action Panel and Account Activity Synchronization
-============================ -->
-                <section id="synchronization">
-                  <h2>Action Panel and Account Activity Synchronization </h2>
-
-
-                  <p>
-                    Now work-item history on the Account Activity tab is updated immediately after the user updates and saves the Action Panel. The user does not need to reload the page to view changes made to the account.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/synch.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Closing Right Section
-============================ -->
-                <section id="closingRightSection">
-                  <h2>Closing Right Section</h2>
-
-
-                  <p>
-                    This feature allows users to close the right-side section to allow more space for the middle section. This feature is available regardless of the number of tabs in the section.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/close.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    As a result, the user hides unnecessary sections to expand the working area.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/close2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-
-                </section>
-                <hr class="divider">
-
-                <!-- Showing Rules Reprocessing Notifications
-============================ -->
-                <section id="rules">
-                  <h2>Showing Rules Reprocessing Notifications</h2>
-
-
-                  <p>
-                    This feature allows users to see notifications about rules reprocessing in all opened tabs including Summary Card View and Forms.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/rules.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    These notifications are displayed in Card View as soon as a user clicks <strong>Reprocess </strong>in the Flo Rules grid.
-                  </p>
-                  <p>
-
-                    <img src="assets/images/rules2.png" height="auto" width="100%" alt="alt_text" title="image_tooltip">
-
-                  </p>
-                  <p>
-                    We hope you enjoy the new improvements!
-                  </p>
-                  <p>
-                    You can always let VisiQuate know your feedback at <a href="mailto:support@visiquate.com">support@visiquate.com</a>.
-                  </p>
-                </section>
-
-
-
-                <!-- Content end -->
-
-                <!-- Footer
-  ============================ -->
-                <!--
-                <footer id="footer" class="section bg-dark footer-text-light">
-                  <div class="container">
-                    <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
-                      <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
-                      <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                    <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
-                    <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
-                  </div>
-                </footer>
-
-                -->
-        </div>
-        <!-- Document Wrapper end -->
-
-        <!-- Back To Top -->
-        <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
-
-        <!-- JavaScript
-============================ -->
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <!-- Highlight JS -->
-        <script src="assets/vendor/highlight.js/highlight.min.js"></script>
-        <!-- Easing -->
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <!-- Magnific Popup -->
-        <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <!-- Custom Script -->
-        <script src="assets/js/theme.js"></script>
-</body>
-
+<!DOCTYPE HTML>
+<!--
+	Strongly Typed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>VISIQUATE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">VISIQUATE</a></h1>
+							<p>WHEN WE SAY “CULTURE EATS STRATEGY,” IT’S THE FARTHEST THING FROM A SLOGAN</p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
+									<li>
+										<a href="#" class="icon fa-chart-bar"><span>User Guides</span></a>
+										<ul>
+											<li><a href="user_guide.html">VisiQuate User Guide</a></li>
+											<li><a href="#">Visual Insight Overview</a></li>
+											<li><a href="#">Flo User Guide</a></li>
+											<li><a href="#">Introduction to Card View</a></li>
+
+											<li>
+												<a href="#">Flo</a>
+												<ul>
+													<li><a href="#">Magna phasellus</a></li>
+													<li><a href="#">Etiam dolore nisl</a></li>
+													<li><a href="#">Phasellus consequat</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Common Flo Operators</a></li>
+										</ul>
+									</li>
+									<li><a class="icon solid fa-cog" href="releaseNotes.html"><span>Release Notes</span></a></li>
+									<!-- used to be Left Sidebar -->
+									<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Update Videos</span></a></li>
+									<!-- used to be Right Sidebar -->
+									<li><a class="icon solid fa-sitemap" href="test.html"><span>VISIQUATE BASICS</span></a></li>
+									<li><a class="icon solid fa-sitemap" href="../iDocs/index-2.html"><span>Release Notes</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Features -->
+				<section id="features">
+					<div class="container">
+						<header>
+							<h2>Paradise Health Training Library <strong>HOW TO USE VISIQUATE</strong>!</h2>
+						</header>
+						<div class="row aln-center">
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="assets\images\cv.png" alt="" /></a>
+										<header>
+											<h3>Release Notes – Summer 2022 </h3>
+										</header>
+										<p><a href="releaseNotes.html">VisiQuate is excited to make you aware of a ton of cool new features that we have made to our
+										analytics application, Numero. This action-packed release is full of new capabilities, streamlined
+										user experiences, and other improvements to the user reporting and dashboarding experience.
+										We hope you enjoy everything you read about it and more importantly, are excited to see you
+										take advantage of everything this release has to offer.</a>
+										</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="assets\images\cv.png" alt="" /></a>
+										<header>
+											<h3>Summer 2022 Update Video</h3>
+										</header>
+										<p><a href="left-sidebar.html">We wanted to do a video to highlight changes since the beginning of the year
+										that not everyone may have noticed, as well as talk about the upgrade to Card View that will be coming available
+										over the new couple of months to all clients.  All of these updates are detailed in our release notes,
+										and we expect they will add up to great changes to your experience.
+										Without further ado, let’s jump into the details!</a>.
+										</p>
+									</section>
+
+							</div>
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="assets\images\cv.png" alt="" /></a>
+										<header>
+											<h3>What's this built with?</h3>
+										</header>
+										<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
+										sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
+									</section>
+
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="container">
+						<p>Use this space for <strong>profound thoughts</strong>.<br />
+						Or an enormous ad. Whatever.</p>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+
+							<!-- Content -->
+								<div id="content" class="col-8 col-12-medium">
+
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2><a href="#">I don’t want to say <strong>it’s the aliens</strong> ...<br />
+												but it’s the aliens.</a></h2>
+											</header>
+											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+											<h3>I mean isn't it possible?</h3>
+											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
+											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
+											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
+											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
+											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
+											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
+											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
+											<ul class="actions">
+												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+											</ul>
+										</article>
+
+									<!-- Post -->
+										<article class="box post">
+											<header>
+												<h2><a href="#">By the way, many thanks to <strong>regularjane</strong>
+												for these awesome demo photos</a></h2>
+											</header>
+											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+											<h3>You should probably check out her work</h3>
+											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
+											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
+											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
+											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
+											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
+											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
+											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
+											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
+											Curabitur leo nibh, rutrum malesuada.</p>
+											<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
+											Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
+											vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
+											magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
+											tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
+											at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
+											tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
+											magna tempus.</p>
+											<ul class="actions">
+												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+											</ul>
+										</article>
+
+								</div>
+
+							<!-- Sidebar -->
+								<div id="sidebar" class="col-4 col-12-medium">
+
+									<!-- Excerpts -->
+										<section>
+											<ul class="divided">
+												<li>
+
+													<!-- Excerpt -->
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 30</span>
+																<h3><a href="#">Just another post</a></h3>
+															</header>
+															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+														</article>
+
+												</li>
+												<li>
+
+													<!-- Excerpt -->
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 28</span>
+																<h3><a href="#">And another post</a></h3>
+															</header>
+															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+														</article>
+
+												</li>
+												<li>
+
+													<!-- Excerpt -->
+														<article class="box excerpt">
+															<header>
+																<span class="date">July 24</span>
+																<h3><a href="#">One more post</a></h3>
+															</header>
+															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+									<!-- Highlights -->
+										<section>
+											<ul class="divided">
+												<li>
+
+													<!-- Highlight -->
+														<article class="box highlight">
+															<header>
+																<h3><a href="#">Something of note</a></h3>
+															</header>
+															<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
+															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
+															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
+															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
+															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
+															<ul class="actions">
+																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+															</ul>
+														</article>
+
+												</li>
+												<li>
+
+													<!-- Highlight -->
+														<article class="box highlight">
+															<header>
+																<h3><a href="#">Something of less note</a></h3>
+															</header>
+															<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
+															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
+															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
+															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
+															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
+															<ul class="actions">
+																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
+															</ul>
+														</article>
+
+												</li>
+											</ul>
+										</section>
+
+								</div>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input name="name" placeholder="Name" type="text" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input name="email" placeholder="Email" type="text" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message"></textarea>
+											</div>
+											<div class="col-12">
+												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
+											</div>
+										</div>
+									</form>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
+									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
+									leo nibh, rutrum eu malesuada.</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon solid fa-home">
+													1234 Somewhere Road<br />
+													Nashville, TN 00000<br />
+													USA
+												</li>
+												<li class="icon solid fa-phone">
+													(000) 000-0000
+												</li>
+												<li class="icon solid fa-envelope">
+													<a href="#">info@untitled.tld</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon brands fa-twitter">
+													<a href="#">@untitled</a>
+												</li>
+												<li class="icon brands fa-instagram">
+													<a href="#">instagram.com/untitled</a>
+												</li>
+												<li class="icon brands fa-dribbble">
+													<a href="#">dribbble.com/untitled</a>
+												</li>
+												<li class="icon brands fa-facebook-f">
+													<a href="#">facebook.com/untitled</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

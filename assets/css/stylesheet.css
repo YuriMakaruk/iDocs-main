@@ -205,8 +205,10 @@ h2 {
   font-size: 2.2rem;
 }
 
+
 dl, ol, ul, pre, blockquote, .table {
   margin-bottom: 1.8rem;
+  
 }
 
 /*=== Highlight Js ===*/

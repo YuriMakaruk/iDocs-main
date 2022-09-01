@@ -137,7 +137,7 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#full-version-information">In This Platform Release</a>
+
 
           <li class="nav-item"><a class="nav-link" href="#sprint-progress-on-future-platform-releases">Sprint Progress
               on Future Platform Releases</a></li>
@@ -174,17 +174,9 @@
 
 
             <p>
-              <strong>08/18/2022</strong>
+              09/01/2022
             </p>
-            <p>
-              <strong> </strong>
-            </p>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
+            <br>
             <h1 id="choose-your-own-adventure">Choose Your Own Adventure!</h1>
 
 
@@ -216,7 +208,7 @@
               from these other views about current projects and provides some high-level descriptions. This document is
               for internal use only.
             </p>
-
+            <h1></h1>
 
 
             <h1 id="feature-highlights">Feature Highlights</h1>
@@ -224,7 +216,7 @@
 
             <h2 id="card-view-Release-and-other-highlights">
 
-              Card view Release and other highlights
+              (Previously Released) Card view Release and other highlights
             </h2>
 
 
@@ -241,6 +233,14 @@
               would have already been available in client domains, but we wanted to ensure they were highlighted for
               clients fully and also update the user guides. Other changes such as the EOB lookup update are also
               highlighted in the external release notes.
+            </p>
+            <p>
+              (<a href="https://www.visiquate.com/training-library/video/release-updates-summer-2022">Client video</a>,
+              <a
+                href="https://www.visiquate.com/assets/documents/resources/training-materials/VisiQuate-Release-Notes-Action-Panel-Summer-2022.pdf">release
+                notes</a>, <a
+                href="https://www.visiquate.com/assets/documents/resources/training-materials/VisiQuate-Flo-User-Guide_Summer_2022.pdf">updated
+                Flo User guide</a> (updated Analytics guide for Card view from VI coming soon))
             </p>
             <h2 id="previously-released-action-panel-can-stay-open1">
 
@@ -308,7 +308,8 @@
                 href="https://www.visiquate.com/assets/documents/resources/training-materials/Visual-Insights-User-Guide.pdf">fascinating
                 user guide</a> are all available to provide more details if needed.
             </p>
-            <h2>
+            <h2 id="DMA">
+
               (Previously released) DMA and “Payer” Flo Updates
             </h2>
 
@@ -352,109 +353,123 @@
                 </ul>
               </li>
             </ul>
-            <h1></h1>
-
-
             <h1 id="in-this-platform-release">In This Platform Release</h1>
 
 
-            <h2>Detail </h2>
+            <h2 id="Detail">Detail </h2>
 
 
 
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th>Area
-                  </th>
-                  <th>Updates
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Concerto (Aurora)
-                  </th>
-                  <th>
-                    <ul>
+            <table>
+              <tr>
+                <td><strong>Area</strong>
+                </td>
+                <td><strong>Updates</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Concerto (Aurora)
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Added improved selection handling for Flo Worklist items when using the Shift key to select
-                        more
-                        than 50 items
+                    <li>Fixed defect with Safari so that work list items can have updates done via the action panel when
+                      using card view
 
-                      <li>Updated Pin and Unpin icons in Flo grid to ensure it is consistent.
+                    <li>Supported UMHS DispoFlo so that the Last Status Date INS shows the correct Date now
 
-                      <li>Fixed defect where Flo Rule edit fields were not appearing in the Action Panel
+                    <li>Resolved technical issues that could occur during the deployment process
 
-                      <li>Fixed defect where the abbreviated numeric value for millions (e.g. $1.45 M) did not work when
-                        used as a filter in Flo Worklist columns
+                    <li>Resolved an issue where a banner about pinned columns would show incorrectly when a user was
+                      working 2 segments for a Flo in different tabs
 
-                      <li>Fixed defect with Flo Grid where an unexpected border was showing under the first row
+                    <li>Fixed a defect with "Highlight even rows" option so that it can be applied to all worklists at
+                      once using "Apply to all my worklists" option
 
-                      <li>Technical cleanup around UI updates and migration
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Fixed a defect with the FLO grid so that it doesn’t become empty if you enter some filter value
+                      into numeric field and scroll down to the next page
 
-                      <li>Added ability to override Flo tenant when cloning Flo configuration
+                    <li>Updated PAC icon in Concerto
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Fixed defect with Card View preventing a drill from one Summary Card View (SCV) to another SCV
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Action Panel Framework
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Fixed a defect where failures could occur while creating/running drool based FLO rules
 
-                      <li>Supported Envision Coding Audit Flo by enabling time fields to have time typed rather than
-                        selected via drop-down.
+                    <li>Fixed defect with Pay Flo: 'Filter Expression' field so that it passes validation, and rule can
+                      be created/edited/cloned
 
-                      <li>Supported Envision Coding Audit Flo by adding a display of upper case text in the Action Panel
-                        and Worklist
+                    <li>Supported USC with HL7 field Patient Address parsing logic update
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Action Panel Framework
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Enable additional rules in the action panel to ensure that validation of future dates is
-                        correct.
+                    <li>Added infotip to action panel in bulk edit mode
 
-                      <li>Fixed defects with Start Time and End Time field inputs and use of Save button
+                    <li>Added the ability to use dictionary keys as part of the rules processing to improve our
+                      flexibility
 
-                      <li>Fixed defect where Recommendation tab was empty on Card View
+                    <li>Added an additional rule qualifier name to be more clear about when a rule is processed
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Numero
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Fixed defect where color of some text and borders were unexpectedly changing
+                    <li>Fixed a defect with Numero drills so that these are working on STG and PROD in Presentation Mode
 
-                      <li>Fixed defect where exception messages do not appear for the 'Retro/Appeal Date' field when
-                        input
-                        format is incorrect
+                    <li>Fixed defect where the "Total" row moves down the report after the correction of the fields -
+                      now "Total" is always on the top
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Core API
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Updated the rules logic to allow for prefix/suffix capabilities and also add a “Like” operator
+                    <li>Added endpoint to generate V&V reports in CSV format to make the testing and validation process
+                      easier with client engineering
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Sonata
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Technical refactoring completed to isolate recommendation engine code for easier maintenance.
+                    <li>Added a new parameter and resolved an issue for MicroStrategy commands to help with resolving
+                      errors/problems
 
-                      <li>Fixed defect with SCV so that WL Item can be updated via AP.
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Numero
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Removed unneeded buttons for Service ETLs on Client side
 
-                      <li>Added option to access Card View from VI directly without needing to open a Report first
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-              </tbody>
+                    <li>Automatically added permission for Solution to its creator to aid in the standardization work
+
+                    <li>Added more test scripts to cover the work done for standardization
+                    </li>
+                  </ul>
+                </td>
+              </tr>
             </table>
 
 
@@ -463,13 +478,17 @@
 
             <ul>
 
-              <li><a href="https://support.visiquate.com/projects/AURO/versions/28143">Aurora (Concerto)</a>
+              <li><a href="https://support.visiquate.com/projects/AURO/versions/28165">Aurora (Concerto)</a>
 
-              <li><a href="https://support.visiquate.com/projects/FLO/versions/28146">Flo</a>
+              <li><a href="https://support.visiquate.com/projects/FLO/versions/28172">Flo</a>
 
-              <li><a href="https://support.visiquate.com/projects/APF/versions/28147">Action Panel Framework</a>
+              <li><a href="https://support.visiquate.com/projects/APF/versions/28166">Action Panel Framework</a>
 
-              <li><a href="https://support.visiquate.com/projects/NVQCORE/versions/28123">Numero</a>
+              <li><a href="https://support.visiquate.com/projects/NVQCORE/versions/28173">Numero</a>
+
+              <li><a href="https://support.visiquate.com/projects/CONC/versions/28167">Core API</a>
+
+              <li><a href="https://support.visiquate.com/projects/SNT/versions/28184">Sonata</a>
               </li>
             </ul>
             <h1></h1>
@@ -484,155 +503,119 @@
                 B - Project Information</a>.
             </p>
 
+            <table>
+              <tr>
+                <td><strong>Project</strong>
+                </td>
+                <td><strong>App</strong>
+                </td>
+                <td><strong>Notable Items</strong>
+                </td>
+                <td><strong>Release</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>eCommerce Platform integration for Ascensia
+                </td>
+                <td>
+                  Concerto
+                </td>
+                <td>
+                  <ul>
 
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th>Project
-                  </th>
-                  <th>App
-                  </th>
-                  <th>Notable Items
-                  </th>
-                  <th>Release
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>eCommerce Platform integration for Ascensia
-                  </th>
-                  <th>
-                    Concerto
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Down to bug fixes, waiting on client to land go-live date
+                    </li>
+                  </ul>
+                </td>
+                <td>Est. Oct 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Card View Refactoring
+                </td>
+                <td>
+                  Concerto
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Down to bug fixes, waiting on client to land go-live date
-                      </li>
-                    </ul>
-                  </th>
-                  <th>Est. August 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Card View Refactoring
-                  </th>
-                  <th>
-                    Concerto
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Finishing dev work; landing rollout plan
+                    </li>
+                  </ul>
+                </td>
+                <td>June 2022 (dev)
+                  <p>
+                    Rollout through September and October
+                </td>
+              </tr>
+              <tr>
+                <td>Baseline Flo and Aurora Testing Automation
+                </td>
+                <td>
+                  Flo
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Finishing dev work; landing rollout plan
-                      </li>
-                    </ul>
-                  </th>
-                  <th>June 2022 (dev)
-                    <p>
-                      Rollout through September and October
-                  </th>
-                </tr>
-                <tr>
-                  <th>Baseline Flo and Aurora Testing Automation
-                  </th>
-                  <th>
-                    Flo
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Completed initial frameworks to enable this
 
-                      <li>Completed initial frameworks to enable this
+                    <li>Working with QA teams to drive scenarios and actual automation for each release
+                    </li>
+                  </ul>
+                </td>
+                <td>Late Q3 2022
+                </td>
+              </tr>
+              <tr>
+                <td>All
+                </td>
+                <td>Platform Frameworks and Libraries Updates
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Working with QA teams to drive scenarios and actual automation for each release
-                      </li>
-                    </ul>
-                  </th>
-                  <th>Late Q3 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Rules Editor 3.0
-                  </th>
-                  <th>
-                    Flo
-                  </th>
-                  <th>
-                    <ul>
+                    <li>In development
+                    </li>
+                  </ul>
+                </td>
+                <td>Sept 15 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Interactive Recommendations and WorkFlow
+                </td>
+                <td>
+                  Flo
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Reviewed capabilities, finishing some feedback items before deployment for client engineering
-                      </li>
-                    </ul>
-                  </th>
-                  <th>August 18 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Numero
-                  </th>
-                  <th>Card View from VI
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Creating SSD updates
 
-                      <li>Completing development and creating documentation
-                      </li>
-                    </ul>
-                  </th>
-                  <th>August 18 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>All
-                  </th>
-                  <th>Platform Frameworks and Libraries Updates
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Completing additional enhancements to resolve issues seen as we try to build in Paradise
+                    </li>
+                  </ul>
+                </td>
+                <td>End of October
+                </td>
+              </tr>
+              <tr>
+                <td>Ana
+                </td>
+                <td>Deployment Support and improvement
+                </td>
+                <td>
+                  <ul>
 
-                      <li>In development
-                      </li>
-                    </ul>
-                  </th>
-                  <th>August 31 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Interactive Recommendations and WorkFlow
-                  </th>
-                  <th>
-                    Flo
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Started research spikes/deployment
 
-                      <li>Continuing to map statuses
-
-                      <li>Doing updates to the original work as we work to deploy further in staging environments
-                      </li>
-                    </ul>
-                  </th>
-                  <th>July 2022 dev completion
-                    <p>
-                      Late Sept. for Paradise release
-                  </th>
-                </tr>
-                <tr>
-                  <th>Ana
-                  </th>
-                  <th>Deployment Support and improvement
-                  </th>
-                  <th>
-                    <ul>
-
-                      <li>Started research spikes/deployment
-                      </li>
-                    </ul>
-                  </th>
-                  <th>Sept. 2022
-                  </th>
-                </tr>
-              </tbody>
+                    <li>Completed initial rollout to CHOC
+                    </li>
+                  </ul>
+                </td>
+                <td>November 2022
+                </td>
+              </tr>
             </table>
 
 
@@ -667,59 +650,55 @@
                 B - Project Information</a>.
             </p>
 
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th><strong>App</strong>
-                  </th>
-                  <th><strong>Project</strong>
-                  </th>
-                  <th><strong>Release</strong>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Numero
-                  </th>
-                  <th>MicroStrategy upgrade
-                  </th>
-                  <th>Q4 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Numero
-                  </th>
-                  <th>API for Embedding VIs to Epic
-                  </th>
-                  <th>Q4 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Single worklist view for users
-                  </th>
-                  <th>Q4 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Rec engine crowdsourcing
-                  </th>
-                  <th>Q4 2022
-                  </th>
-                </tr>
-                <tr>
-                  <th>Numero
-                  </th>
-                  <th>Right-click worklisting from VI
-                  </th>
-                  <th>Q4 2022
-                  </th>
-                </tr>
-              </tbody>
+            <table>
+              <tr>
+                <td><strong>App</strong>
+                </td>
+                <td><strong>Project</strong>
+                </td>
+                <td><strong>Release</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Numero
+                </td>
+                <td>MicroStrategy upgrade
+                </td>
+                <td>Q4 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Numero
+                </td>
+                <td>API for Embedding VIs to Epic
+                </td>
+                <td>Q4 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Single worklist view for users
+                </td>
+                <td>Q4 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Rec engine crowdsourcing
+                </td>
+                <td>Q4 2022
+                </td>
+              </tr>
+              <tr>
+                <td>Numero
+                </td>
+                <td>Right-click worklisting from VI
+                </td>
+                <td>Q4 2022
+                </td>
+              </tr>
             </table>
 
 
@@ -734,163 +713,157 @@
                 B - Project Information</a>.
             </p>
 
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th><strong>Solution</strong>
-                  </th>
-                  <th><strong>Notable Items</strong>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Workforce Performance Analytics
-                  </th>
-                  <th>
-                    <ul>
+            <table>
+              <tr>
+                <td><strong>Solution</strong>
+                </td>
+                <td><strong>Notable Items</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Workforce Performance Analytics
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Landing Pilot timeline for SPRIN PayFlo Base WPA pending follow up calls with client
+                    <li>Finalizing PayFlo Base WPA rollup views to be rolled out to Springstone, Mosaic, GI Alliance,
+                      CHOC, and Jupiter by end of September
 
-                      <li>Working toward USC CollectionFlo Base WPA demo in STG. CE team and Account Manager engaged
+                    <li>Working with USC and Gastro CE teams to deploy Base WPA datasets
 
-                      <li>Starting work on Advanced WPA validation: Engagement Analytics & Quality Audit Flo
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo Machine Learning/AI model integration
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Advanced WPA validation pending Springstone client engagement targeted in September
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Flo Machine Learning/AI model integration
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Data science team continuing to refine the simulator model to help show how workFlow ranker
-                        can
-                        help clients show improved results
+                    <li>Data science team continuing to refine the simulator model to help show how workFlow ranker can
+                      help clients show improved results
 
-                      <li>Finishing work to deploy ranker and overturn/root cause diagnostics to USC and then starting
-                        work to deploy them to SPRIN and CHOC and paradise
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>“Payer Action Center”
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Working to get ranker updates from USC
 
-                      <li>Findings: GHS discovery of over $2.9M in total potential revenue; Orlando over $833k in total
-                        potential revenue.
+                    <li>Started work to deploy models for other Flo clients
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>“Payer Action Center”
+                </td>
+                <td>
+                  <ul>
 
-                      <li>GHS, Orlando & Envision LIVE
+                    <li>Findings: GHS discovery of over $2.9M in total potential revenue; Orlando over $833k in total
+                      potential revenue.
 
-                      <li>CHOC LIVE 7/8; currently working through 835 data issues & reviewing findings with
-                        stakeholders
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>RMA/DMA Modules
-                  </th>
-                  <th>
-                    <ul>
+                    <li>GHS, Orlando & Envision LIVE
 
-                      <li>Underpayments DEN / PV PRIORITIZE module in Foundry stage
+                    <li>CHOC LIVE 7/8; currently working through 835 data issues & reviewing findings with stakeholders
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>RMA/DMA Modules
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Underpayments DEN / PV APPEALS module in Discovery stage
+                    <li>Underpayments DEN / PV PRIORITIZE module in Foundry stage
 
-                      <li>Charge Reconciliation module ACTIVATED at Prospect
+                    <li>Underpayments DEN / PV APPEALS module in Discovery stage
 
-                      <li>E&M ‘Sonar’ module ACTIVATED at Gastro
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Coding Audit Analytics
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Charge Reconciliation module ACTIVATED at Prospect
 
-                      <li>Coding Audit Risk Score in development with Data Science team, initial outputs generated
+                    <li>E&M ‘Sonar’ module ACTIVATED at Gastro
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Coding Audit Analytics
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Audit Management Flo V&V with Envision; ETA go-live week of 8/29
+                    <li>Coding Audit Risk Score in development with Data Science team, initial outputs generated
 
-                      <li>Physician Analytics / HIS Data integration on hold
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Billing (“Pre-Bill) Flo & Analytics
-                  </th>
-                  <th>
-                    <ul>
+                    <li>FLO training occurred 8/25, end-user go-live ETA 9/5
 
-                      <li>Working with the engineering teams to create prebill and UR Flo in JMC and Springstone and
-                        then
-                        will copy to paradise for final release
+                    <li>Physician Analytics / HIS Data integration on hold
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Billing (“Pre-Bill) Flo & Analytics
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Starting work to land the Analytics side of prebill as far as SSD and visuals
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>VisiQuate Usage Analytics
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Working with the engineering teams to create prebill and UR Flo in JMC and Springstone and then
+                      will copy to paradise for final release
 
-                      <li>Completing internal discussions to land our first steps in improving these capabilities and
-                        getting them more easily available, more consistently
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Patient Access Analytics
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Starting work to land the Analytics side of prebill as far as SSD and visuals
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>VisiQuate Usage Analytics
+                </td>
+                <td>
+                  <ul>
 
-                      <li>On hold at the moment
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Reserves/Finance
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Initiating feedback on solution concept mockups with client services
 
-                      <li>Started creating the initial SSD
+                    <li>Updating SSD based on discovery efforts
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Patient Access Analytics
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Revamping what reports are needed
+                    <li>On hold at the moment
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Reserves/Finance
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Defining the hindsight report with PVG
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-                <tr>
-                  <th>Parathon Contract Management Integration
-                  </th>
-                  <th>
-                    <ul>
+                    <li>Started creating the initial SSD for version 2.0 after “reserves-apalooza” last week
 
-                      <li>Expected reimbursement loaded for PVG, working on reporting feedback to create standard module
+                    <li>Defined the new set of reports we want to create and have available.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Parathon Contract Management Integration
+                </td>
+                <td>
+                  <ul>
 
-                      <li>Working thru sales plan/process for the contract modeling capabilities
-                      </li>
-                    </ul>
-                  </th>
-                </tr>
-              </tbody>
+                    <li>Expected reimbursement loaded for PVG, working on reporting feedback to create standard module
+
+                    <li>Working thru sales plan/process for the contract modeling capabilities
+                    </li>
+                  </ul>
+                </td>
+              </tr>
             </table>
 
 
@@ -922,329 +895,290 @@
               sections above) projects OR ones that are presently on hold.
             </p>
 
-            <table class="table table-hover">
-              <thead class="thead-dark">
-                <tr>
-                  <th><strong>App</strong>
-                  </th>
-                  <th><strong>Project</strong>
-                  </th>
-                  <th><strong>Description</strong>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Action Panel Framework
-                  </th>
-                  <th>Problem: action panels are essentially islands of custom code defined on a per-Flo basis. This
-                    makes
-                    it difficult to push new features to action panels. It also results in large volumes of
-                    customization
-                    tickets - both bugs and improvements.
-                    <p>
-                      Solution: This problem will need to be solved through several projects, but the most important one
-                      is creating a standard “language” in how action panels are coded. This will reduce variability in
-                      how the same kind of code is written and centralize artifact management for action panels across
-                      Flos. This sets us up for eventually being able to configure action panels through the user
-                      interface.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Flo Machine Learning/AI model integration
-                  </th>
-                  <th>Problem: Revenue Cycle leaders know that the current way of distributing work during the
-                    collections
-                    lifecycle is unintelligent and not optimized. Moreover, as different events occur in an account’s
-                    life
-                    during this phase, this data is not really used to reprioritize what is worked on. The principles on
-                    which PayFlo worklist segmentation is based attempt to address this, but they are limited by the
-                    human
-                    imagination of the SMEs that created PayFlo’s prioritization logic.
-                    <p>
-                      Solution: The mission of this feature is to reduce the volume of human intervention in deciding
-                      how
-                      work should be prioritized with the presumption that a machine can do it better. We also believe
-                      that truly leveraging Ana or “AI” in PayFlo will become a major selling point for many Revenue
-                      Cycle
-                      leaders because of the promise of continuous improvement of a machine’s
-                      prioritization/segmentation
-                      engine compared to a suite of static business logic rules. Looking to the future, a machine should
-                      be involved in every decision on who should work on what and when.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>WorkFlow 2.0
-                  </th>
-                  <th>Problem: Within the Flo process today, there is not a good way to track the detailed status of any
-                    given item, and also track the detailed actions that may be done by a user when they “touch” an
-                    account. This creates a knowledge gap for both managers and users because we are unable to
-                    efficiently
-                    measure the details of what happens during a “touch”
-                    <p>
-                      Solution: Flo will be moved from a “status/disposition” process where a user selects one each of
-                      those items to a true business process Flow capability. Recommendations will be incorporated so
-                      that
-                      users select which ones they followed and can add others themselves. A process/state/sub-state
-                      will
-                      be implemented so that there is a more accurate view of where the current work item stands on it’s
-                      road to completion. These 2 things together will allow us to better provide process analytics for
-                      clients and improve recommendations which would reduce cost and improve yield.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Analytics
-                  </th>
-                  <th>Patient Access Analytics
-                  </th>
-                  <th>Problem: St. Joseph and other clients need to analyze registration and scheduling data so they can
-                    manage their overall process to clear appointments prior to the visit, cancellation rates, and
-                    dollars
-                    collected during the pre-visit processes.
-                    <p>
-                      Solution: Create a standardized set of analytics with the VQ8 process (summarize, trend,
-                      benchmark,
-                      explore anomaly) that can be used with daily files about appointments and registration information
-                      to help the clients manage their patient access process.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo / Analytics
-                  </th>
-                  <th>Midcycle Flo - Edits, Holds and Utilization review
-                  </th>
-                  <th>Problem: Clients need to manage the “mid-cycle” - that time between (or during) the clinical work
-                    for the patient and billing. There are at least 2 identified workFlows, one for utilization review
-                    and
-                    one for holds and edits. One common point between them is that users in both cases tend to focus on
-                    the visit/encounter, not the claim, and in both cases work has to transition smoothly to the Payer
-                    (claim) Flow.
-                    <p>
-                      Solution: Enable Flos and Analytics to be created that support these workFlows so that users can
-                      easily track what needs to be done, and enable the transition of work across Flows seamlessly for
-                      users so that rebilling can be done easily if needed.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo / Analytics
-                  </th>
-                  <th>Contract Management Integration
-                  </th>
-                  <th>Problem: Some clients do not have a contract management system to provide expected reimbursement
-                    or
-                    they do not trust their current vendor. In order to know if the payers are paying them as expected
-                    and
-                    to have accurate A/R valuation, the sites need some way to get expected reimbursement
-                    <p>
-                      Solution: VisiQuate can provide integration with a 3rd party Contract Management system via a
-                      partner called Parathon. We will enable reusable integration with Parathon which can push in
-                      expected reimbursement based on claims and other data which we pass from the client database to
-                      Parathon.
-                  </th>
-                </tr>
-                <tr>
-                  <th>New App
-                  </th>
-                  <th>eCommerce Platform integration for Ascensia
-                  </th>
-                  <th>Problem: ADC needs to sunset their old eCommerce platform that enabled HCPs to procure medical
-                    devices and other material from ADC. It also enabled Glooko and Vivify to fulfill orders from ADC on
-                    behalf of their user populations leveraging ADC products.
-                    <p>
-                      Solution: set-up an eCommerce portal accessible through the platform to create a unified
-                      experience
-                      for HCPs from a single ADC portal (analytics, eCommerce, etc.). As much as possible, leverage COTS
-                      tools to make it easy for ADC to administer the platform on their own, long-term.
-                  </th>
-                </tr>
-                <tr>
-                  <th>New App
-                  </th>
-                  <th>Payer Action Center
-                  </th>
-                  <th>Problem: revenue cycle leaders don’t have an easy way to identify new and existing ways payers may
-                    be misbehaving and managing their escalations to payers, remediation steps taken by payers and
-                    tracking whether or not payers are continuing to comply with promises made.
-                    <p>
-                      Solution: Payer Action Center seeks to provide revenue cycle leaders and contract negotiators a
-                      single interface for managing relationships with payers. This is done by providing a continuous
-                      stream of new monitoring “rules” illuminating payer misbehavior by VQ8 SMEs; also by a means of
-                      creating escalation lists and then tracking payer remediation and long-term behavioral changes;
-                      finally- quick benchmarking on key statistics to compare like payers behavior.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Portable Flo Configuration (Action Panel Framework)
-                  </th>
-                  <th>Problem: deploying Flo configurations is a manual, error-prone process. There is no single engine
-                    that manages all of the ways a Flo can be configured and each configuration setting. So, when
-                    deployments occur taking something that was developed on an internal environment and put out on
-                    PROD,
-                    bugs can be introduced because the process is done manually by an engineer or because dependencies
-                    are
-                    not properly managed in configured components.
-                    <p>
-                      Solution: create a configuration framework that uniquely identifies all configuration settings.
-                      This
-                      will make it easier to perform updates to a given Flo and reduce the risk of errors being
-                      introduced
-                      in the deployment process.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Refactor Card View
-                  </th>
-                  <th>Problem: card view is part of legacy Concerto architecture and as such, is difficult to maintain
-                    when bugs arise or any kind of new feature development (such as activity stream) occurs. Moreover,
-                    it
-                    still uses an older version of Angular that could eventually pose a security risk and again, makes
-                    it
-                    difficult to maintain and keep compatible with modern browsers.
-                    <p>
-                      <br>Solution: we need to add Card View to the Aurora infrastructure we built for our front-end
-                      user
-                      interface. This will make it much easier to maintain since it will follow similar code
-                      organization/separation of concerns/etc. It will also make it easier to build new features in, fix
-                      bugs on and generally make it less prone to breaking as browsers evolve.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Rules Modeling
-                  </th>
-                  <th>Problem: when modifying rules (or creating new ones), users cannot assess what the impact of their
-                    changes will be on what is assigned to a given user or set of users.
-                    <p>
-                      Solution:
-                    <p>
-                      - Provide UI/UX for seeing which rules overlap with which rules and by which volumes.
-                    <p>
-                      - Allow users to easily step into a rule and modify it to remove conflict, if desired
-                    <p>
-                      - Allow users to see how distributions change as users manage a conflict
-                    <p>
-                      - Allow users to maintain unique priority amongst rules
-                  </th>
-                </tr>
-                <tr>
-                  <th>Flo
-                  </th>
-                  <th>Simplify Flo user creation and hierarchy management
-                  </th>
-                  <th>Problem: setting up users to have access to Flo, reporting levels, etc. is all done on the backend
-                    of Flo. This means Client Engineering needs to do the work, which makes configuration management
-                    difficult and takes time (since that is managed through our JIRA/sprint process) - especially with
-                    health system employees constantly coming/going.
-                    <p>
-                      Solution: allow Flo admin users to fully provision users of Flo through the Concerto interface and
-                      manage hierarchy relationships between users/groups/etc.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Analytics
-                  </th>
-                  <th>VisiQuate Usage Analytics
-                  </th>
-                  <th>Problem: VisiQuate needs a comprehensive product usage analytics system that can help account and
-                    product managers better understand who is using what parts of our application. This information
-                    exists
-                    in a variety of repositories, but we lack a comprehensive user experience that enables our VisiQuate
-                    team members to quickly get insights across a variety of usage subjects. Instead, technical
-                    resources
-                    are required to extract data out of repositories like platform MySQL databases, Elastic Search
-                    (Kibana), etc. While we do offer account managers the ability to analyze data from Kibana as a
-                    dataset
-                    exposed to our Paradise, most newer or infrequent users of usage reporting are unclear on how to use
-                    the dataset. Moreover, team members have produced tons of content with different views of "truth"
-                    due
-                    to misuse of filtering logic, etc.
-                    <p>
-                      Solution: VisiQuate needs to "VisiQuate" VisiQuate product usage analytics. We need a
-                      comprehensive
-                      analytics suite that enables us to assess product usage for all major features. We also need more
-                      standardized ways of reviewing where users are spending most of their time in analytics to get a
-                      better sense of where our clients find value in our reporting and workFlow suite. In several
-                      years,
-                      we will have grown this analytics suite into an even more comprehensive analytics toolkit for
-                      reviewing usage patterns, drop-off points and other consumer application-style metrics. This North
-                      Star will require technology upgrades along the way. We can get started, though, by leveraging the
-                      existing BI stack that we have and building data pipelines into this usage analytics ecosystem.
-                  </th>
-                </tr>
-                <tr>
-                  <th>All
-                  </th>
-                  <th>MySQL and Other Platform Library Updates
-                  </th>
-                  <th>Problem/Solution: Currently many of our core technologies are behind on their upgrades and we need
-                    to get them upgraded in order to ensure continued security, performance and the ability to delivery
-                    new enhancements
-                  </th>
-                </tr>
-                <tr>
-                  <th>All
-                  </th>
-                  <th>Basic Automation testing - Flo and Aurora
-                  </th>
-                  <th>Problem: Currently there is not standard automated testing run on each release for UI elements and
-                    for Flo. Not having test automation creates additional risk and requires time spent by the QA team
-                    on
-                    basic testing rather than more advanced testing and review.
-                    <p>
-                      Solution: Creating some basic test automation for all our elements as it relates to the base
-                      platform will ensure QA can focus on more complex use cases and we can potentially catch more
-                      issues
-                      before a client sees them or before they impact clients.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Analytics
-                  </th>
-                  <th>Reserves/Finance
-                  </th>
-                  <th>Problem: Our reserves capability is currently geared towards a specific process engineered for
-                    Excalibur clients. The visuals are also not aligned with our current standards
-                    <p>
-                      Solution: Update/review all of the reserves reports, reorganize into the core need (define
-                      reserves
-                      for a month at any point) plus supporting documentation reports. Create a standard SSD that can be
-                      used, and also enable a hindsight report as part of the supporting documentation.
-                  </th>
-                </tr>
-                <tr>
-                  <th>Analytics
-                  </th>
-                  <th>Workforce Performance Analytics
-                  </th>
-                  <th>Problem: WPA is tightly coupled with its previous implementation at Orlando Health. Moreover,
-                    underlying methodologies and frameworks for enabling WPA's value proposition need strengthening so
-                    that we can use WPA as a jumping off point for assessing organizational impact of an individual
-                    worker.
-                    <p>
-                      Solution: Update WPA into a new solution package that is sufficiently different from RMA/DMA to
-                      justify it as a separate product. The emphasis will be on applying kai-zen/Kanban methodologies to
-                      the revenue cycle in order to create an apples-to-apples framework for measuring worker
-                      performance.
-                      Using tried/true management principles for how to manage teams that fundamentally work backlogs to
-                      produce added value on a claim assembly line will provide a robust knowledge framework that will
-                      make Revenue Cycle leaders feel like they are adopting a best-in-breed approach. Also, this will
-                      enable future initiatives to conduct process mining and assessing impact of workers on revenue
-                      cycle
-                      KPIs.
-                  </th>
-                </tr>
-              </tbody>
+            <table>
+              <tr>
+                <td><strong>App</strong>
+                </td>
+                <td><strong>Project</strong>
+                </td>
+                <td><strong>Description</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Action Panel Framework
+                </td>
+                <td>Problem: action panels are essentially islands of custom code defined on a per-Flo basis. This makes
+                  it difficult to push new features to action panels. It also results in large volumes of customization
+                  tickets - both bugs and improvements.
+                  <p>
+                    Solution: This problem will need to be solved through several projects, but the most important one
+                    is creating a standard “language” in how action panels are coded. This will reduce variability in
+                    how the same kind of code is written and centralize artifact management for action panels across
+                    Flos. This sets us up for eventually being able to configure action panels through the user
+                    interface.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Flo Machine Learning/AI model integration
+                </td>
+                <td>Problem: Revenue Cycle leaders know that the current way of distributing work during the collections
+                  lifecycle is unintelligent and not optimized. Moreover, as different events occur in an account’s life
+                  during this phase, this data is not really used to reprioritize what is worked on. The principles on
+                  which PayFlo worklist segmentation is based attempt to address this, but they are limited by the human
+                  imagination of the SMEs that created PayFlo’s prioritization logic.
+                  <p>
+                    Solution: The mission of this feature is to reduce the volume of human intervention in deciding how
+                    work should be prioritized with the presumption that a machine can do it better. We also believe
+                    that truly leveraging Ana or “AI” in PayFlo will become a major selling point for many Revenue Cycle
+                    leaders because of the promise of continuous improvement of a machine’s prioritization/segmentation
+                    engine compared to a suite of static business logic rules. Looking to the future, a machine should
+                    be involved in every decision on who should work on what and when.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>WorkFlow 2.0
+                </td>
+                <td>Problem: Within the Flo process today, there is not a good way to track the detailed status of any
+                  given item, and also track the detailed actions that may be done by a user when they “touch” an
+                  account. This creates a knowledge gap for both managers and users because we are unable to efficiently
+                  measure the details of what happens during a “touch”
+                  <p>
+                    Solution: Flo will be moved from a “status/disposition” process where a user selects one each of
+                    those items to a true business process Flow capability. Recommendations will be incorporated so that
+                    users select which ones they followed and can add others themselves. A process/state/sub-state will
+                    be implemented so that there is a more accurate view of where the current work item stands on it’s
+                    road to completion. These 2 things together will allow us to better provide process analytics for
+                    clients and improve recommendations which would reduce cost and improve yield.
+                </td>
+              </tr>
+              <tr>
+                <td>Analytics
+                </td>
+                <td>Patient Access Analytics
+                </td>
+                <td>Problem: St. Joseph and other clients need to analyze registration and scheduling data so they can
+                  manage their overall process to clear appointments prior to the visit, cancellation rates, and dollars
+                  collected during the pre-visit processes.
+                  <p>
+                    Solution: Create a standardized set of analytics with the VQ8 process (summarize, trend, benchmark,
+                    explore anomaly) that can be used with daily files about appointments and registration information
+                    to help the clients manage their patient access process.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo / Analytics
+                </td>
+                <td>Midcycle Flo - Edits, Holds and Utilization review
+                </td>
+                <td>Problem: Clients need to manage the “mid-cycle” - that time between (or during) the clinical work
+                  for the patient and billing. There are at least 2 identified workFlows, one for utilization review and
+                  one for holds and edits. One common point between them is that users in both cases tend to focus on
+                  the visit/encounter, not the claim, and in both cases work has to transition smoothly to the Payer
+                  (claim) Flow.
+                  <p>
+                    Solution: Enable Flos and Analytics to be created that support these workFlows so that users can
+                    easily track what needs to be done, and enable the transition of work across Flows seamlessly for
+                    users so that rebilling can be done easily if needed.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo / Analytics
+                </td>
+                <td>Contract Management Integration
+                </td>
+                <td>Problem: Some clients do not have a contract management system to provide expected reimbursement or
+                  they do not trust their current vendor. In order to know if the payers are paying them as expected and
+                  to have accurate A/R valuation, the sites need some way to get expected reimbursement
+                  <p>
+                    Solution: VisiQuate can provide integration with a 3rd party Contract Management system via a
+                    partner called Parathon. We will enable reusable integration with Parathon which can push in
+                    expected reimbursement based on claims and other data which we pass from the client database to
+                    Parathon.
+                </td>
+              </tr>
+              <tr>
+                <td>New App
+                </td>
+                <td>eCommerce Platform integration for Ascensia
+                </td>
+                <td>Problem: ADC needs to sunset their old eCommerce platform that enabled HCPs to procure medical
+                  devices and other material from ADC. It also enabled Glooko and Vivify to fulfill orders from ADC on
+                  behalf of their user populations leveraging ADC products.
+                  <p>
+                    Solution: set-up an eCommerce portal accessible through the platform to create a unified experience
+                    for HCPs from a single ADC portal (analytics, eCommerce, etc.). As much as possible, leverage COTS
+                    tools to make it easy for ADC to administer the platform on their own, long-term.
+                </td>
+              </tr>
+              <tr>
+                <td>New App
+                </td>
+                <td>Payer Action Center
+                </td>
+                <td>Problem: revenue cycle leaders don’t have an easy way to identify new and existing ways payers may
+                  be misbehaving and managing their escalations to payers, remediation steps taken by payers and
+                  tracking whether or not payers are continuing to comply with promises made.
+                  <p>
+                    Solution: Payer Action Center seeks to provide revenue cycle leaders and contract negotiators a
+                    single interface for managing relationships with payers. This is done by providing a continuous
+                    stream of new monitoring “rules” illuminating payer misbehavior by VQ8 SMEs; also by a means of
+                    creating escalation lists and then tracking payer remediation and long-term behavioral changes;
+                    finally- quick benchmarking on key statistics to compare like payers behavior.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Portable Flo Configuration (Action Panel Framework)
+                </td>
+                <td>Problem: deploying Flo configurations is a manual, error-prone process. There is no single engine
+                  that manages all of the ways a Flo can be configured and each configuration setting. So, when
+                  deployments occur taking something that was developed on an internal environment and put out on PROD,
+                  bugs can be introduced because the process is done manually by an engineer or because dependencies are
+                  not properly managed in configured components.
+                  <p>
+                    Solution: create a configuration framework that uniquely identifies all configuration settings. This
+                    will make it easier to perform updates to a given Flo and reduce the risk of errors being introduced
+                    in the deployment process.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Refactor Card View
+                </td>
+                <td>Problem: card view is part of legacy Concerto architecture and as such, is difficult to maintain
+                  when bugs arise or any kind of new feature development (such as activity stream) occurs. Moreover, it
+                  still uses an older version of Angular that could eventually pose a security risk and again, makes it
+                  difficult to maintain and keep compatible with modern browsers.
+                  <p>
+                    <br>Solution: we need to add Card View to the Aurora infrastructure we built for our front-end user
+                    interface. This will make it much easier to maintain since it will follow similar code
+                    organization/separation of concerns/etc. It will also make it easier to build new features in, fix
+                    bugs on and generally make it less prone to breaking as browsers evolve.
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Rules Modeling
+                </td>
+                <td>Problem: when modifying rules (or creating new ones), users cannot assess what the impact of their
+                  changes will be on what is assigned to a given user or set of users.
+                  <p>
+                    Solution:
+                  <p>
+                    - Provide UI/UX for seeing which rules overlap with which rules and by which volumes.
+                  <p>
+                    - Allow users to easily step into a rule and modify it to remove conflict, if desired
+                  <p>
+                    - Allow users to see how distributions change as users manage a conflict
+                  <p>
+                    - Allow users to maintain unique priority amongst rules
+                </td>
+              </tr>
+              <tr>
+                <td>Flo
+                </td>
+                <td>Simplify Flo user creation and hierarchy management
+                </td>
+                <td>Problem: setting up users to have access to Flo, reporting levels, etc. is all done on the backend
+                  of Flo. This means Client Engineering needs to do the work, which makes configuration management
+                  difficult and takes time (since that is managed through our JIRA/sprint process) - especially with
+                  health system employees constantly coming/going.
+                  <p>
+                    Solution: allow Flo admin users to fully provision users of Flo through the Concerto interface and
+                    manage hierarchy relationships between users/groups/etc.
+                </td>
+              </tr>
+              <tr>
+                <td>Analytics
+                </td>
+                <td>VisiQuate Usage Analytics
+                </td>
+                <td>Problem: VisiQuate needs a comprehensive product usage analytics system that can help account and
+                  product managers better understand who is using what parts of our application. This information exists
+                  in a variety of repositories, but we lack a comprehensive user experience that enables our VisiQuate
+                  team members to quickly get insights across a variety of usage subjects. Instead, technical resources
+                  are required to extract data out of repositories like platform MySQL databases, Elastic Search
+                  (Kibana), etc. While we do offer account managers the ability to analyze data from Kibana as a dataset
+                  exposed to our Paradise, most newer or infrequent users of usage reporting are unclear on how to use
+                  the dataset. Moreover, team members have produced tons of content with different views of "truth" due
+                  to misuse of filtering logic, etc.
+                  <p>
+                    Solution: VisiQuate needs to "VisiQuate" VisiQuate product usage analytics. We need a comprehensive
+                    analytics suite that enables us to assess product usage for all major features. We also need more
+                    standardized ways of reviewing where users are spending most of their time in analytics to get a
+                    better sense of where our clients find value in our reporting and workFlow suite. In several years,
+                    we will have grown this analytics suite into an even more comprehensive analytics toolkit for
+                    reviewing usage patterns, drop-off points and other consumer application-style metrics. This North
+                    Star will require technology upgrades along the way. We can get started, though, by leveraging the
+                    existing BI stack that we have and building data pipelines into this usage analytics ecosystem.
+                </td>
+              </tr>
+              <tr>
+                <td>All
+                </td>
+                <td>MySQL and Other Platform Library Updates
+                </td>
+                <td>Problem/Solution: Currently many of our core technologies are behind on their upgrades and we need
+                  to get them upgraded in order to ensure continued security, performance and the ability to delivery
+                  new enhancements
+                </td>
+              </tr>
+              <tr>
+                <td>All
+                </td>
+                <td>Basic Automation testing - Flo and Aurora
+                </td>
+                <td>Problem: Currently there is not standard automated testing run on each release for UI elements and
+                  for Flo. Not having test automation creates additional risk and requires time spent by the QA team on
+                  basic testing rather than more advanced testing and review.
+                  <p>
+                    Solution: Creating some basic test automation for all our elements as it relates to the base
+                    platform will ensure QA can focus on more complex use cases and we can potentially catch more issues
+                    before a client sees them or before they impact clients.
+                </td>
+              </tr>
+              <tr>
+                <td>Analytics
+                </td>
+                <td>Reserves/Finance
+                </td>
+                <td>Problem: Our reserves capability is currently geared towards a specific process engineered for
+                  Excalibur clients. The visuals are also not aligned with our current standards
+                  <p>
+                    Solution: Update/review all of the reserves reports, reorganize into the core need (define reserves
+                    for a month at any point) plus supporting documentation reports. Create a standard SSD that can be
+                    used, and also enable a hindsight report as part of the supporting documentation.
+                </td>
+              </tr>
+              <tr>
+                <td>Analytics
+                </td>
+                <td>Workforce Performance Analytics
+                </td>
+                <td>Problem: WPA is tightly coupled with its previous implementation at Orlando Health. Moreover,
+                  underlying methodologies and frameworks for enabling WPA's value proposition need strengthening so
+                  that we can use WPA as a jumping off point for assessing organizational impact of an individual
+                  worker.
+                  <p>
+                    Solution: Update WPA into a new solution package that is sufficiently different from RMA/DMA to
+                    justify it as a separate product. The emphasis will be on applying kai-zen/Kanban methodologies to
+                    the revenue cycle in order to create an apples-to-apples framework for measuring worker performance.
+                    Using tried/true management principles for how to manage teams that fundamentally work backlogs to
+                    produce added value on a claim assembly line will provide a robust knowledge framework that will
+                    make Revenue Cycle leaders feel like they are adopting a best-in-breed approach. Also, this will
+                    enable future initiatives to conduct process mining and assessing impact of workers on revenue cycle
+                    KPIs.
+                </td>
+              </tr>
             </table>
 
 
